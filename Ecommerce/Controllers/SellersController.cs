@@ -19,7 +19,7 @@ namespace Ecommerce.Controllers
             this.repository = repository;
         }
         [HttpGet]
-        public IEnumerable<Seller> Orders()
+        public IEnumerable<Seller> Sellers()
         {
             return repository.All();
         }

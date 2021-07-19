@@ -12,7 +12,7 @@ namespace Ecommerce.Domain
         public static void Initialize(ShoppingDbContext context)
         {
             context.Database.EnsureCreated();
-            if (context.Orders.Any() || context.Sellers.Any() || context.Payments.Any())
+            if (context.Payments.Any())
             {
                 return;
             }
@@ -72,6 +72,11 @@ namespace Ecommerce.Domain
 
             context.Customers.AddRange(Customer);
             context.SaveChanges(); //SAVE CUSTOMERS
+
+            var Users = new User[]
+            {
+                new User{Name="Eleazar",Email="eleazartracana@gmail.com",}
+            };
         }
     }
 }
