@@ -75,7 +75,7 @@ namespace Ecommerce.Domain
 
             var Users = new User[]
             {
-                new User{Name="Eleazar",Email="eleazartracana@gmail.com",}
+                new User{firstName="Eleazar",lastName="eleazartracana@gmail.com",}
             };
         }
     }

@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace UnitTest
 {
-    public class Tests
+    public class CustomerControllerTest
     {
         [SetUp]
         public void Setup()
